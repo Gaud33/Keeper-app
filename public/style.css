@@ -60,6 +60,7 @@ footer p {
 .create-note{
   display: flex;
   justify-content: center;
+
 }
 
 .input-area{
@@ -68,6 +69,7 @@ footer p {
   justify-content: center;
   padding-bottom: 0;
   height: 100%;
+  
 }
 note-section{
   display:block;
@@ -79,7 +81,9 @@ note-section{
   padding: 5px;
   width: 90%;
   font-family: inherit;
+  pointer-events: all;
 }
+
 
 .input:focus{
   outline: none;
@@ -105,6 +109,7 @@ note-section{
   font-size: 0.8em;
   box-shadow: inherit;
   cursor: pointer;
+  user-select: all;
 
 }
 
@@ -118,4 +123,18 @@ note-section{
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.note .delete-btn{
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--primaryColor);
+  width: 50px;
+  height: 25px;
+  border: none;
+  float: right;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
 }
