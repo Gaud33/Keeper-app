@@ -1,0 +1,19 @@
+:root {
+  --primaryColor: #f5ba13;
+  --secondaryColor: #eee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: var(--secondaryColor);
+  padding: 0 16px;
+}

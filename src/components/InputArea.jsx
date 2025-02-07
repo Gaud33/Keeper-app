@@ -1,38 +1,67 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
+import { Add } from "@mui/icons-material";
+import Fab from "@mui/material/Fab";
+import Zoom from "@mui/material/Zoom";
+import "./InputArea.css";
 
+function InputArea(props) {
+  const [note, setNote] = useState({
+    title: "",
+    content: "",
+  });
 
-function InputArea(props){
+  const [isExpanded, setExpanded] = useState(false);
 
-    const [note, setNote] = useState({
-        title:"",
-        content:""
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setNote((prevNote) => {
+      return {
+        ...prevNote,
+        [name]: value,
+      };
     });
+  }
 
-    function handleChange(event){
-        const {name, value} = event.target;
+  function submitNote(event) {
+    props.onAdd(note);
+    event.preventDefault();
+    setNote({ title: "", content: "" });
+  }
 
-        setNote(prevNote=>{
-            return{
-                ...prevNote,
-                [name]:value
-            };
-        });
-    }
+  function handleClick() {
+    setExpanded(true);
+  }
 
-    function submitNote(event){
-        props.onAdd(note);
-        event.preventDefault();
-        setNote({title:"", content:""})
-    }
-    
+  return (
+    <form class="note input-area">
+      <input
+        name="title"
+        value={note.title}
+        onChange={handleChange}
+        class="input"
+        placeholder="Title"
+        style={{ display: isExpanded ? "block" : "none" }}
+      />
 
-    return(
-        <form class = "note input-area">
-        <input name = "title" value = {note.title} onChange = {handleChange} class = "input" placeholder="Title" /> <br />
-        <textarea name = "content" value = {note.content} onChange = {handleChange} class = "input" placeholder="Take a note..." />
-        <button onClick = {submitNote}type = "submit">Add</button>
-        </form>
-    );
+      <textarea
+        onClick={handleClick}
+        rows={isExpanded ? "3" : "1"}
+        name="content"
+        value={note.content}
+        onChange={handleChange}
+        class="input"
+        placeholder="Take a note..."
+      />
+
+      <Zoom in={isExpanded}>
+        <Fab onClick={submitNote} type="submit">
+          <AddIcon />
+        </Fab>
+      </Zoom>
+    </form>
+  );
 }
 
 export default InputArea;

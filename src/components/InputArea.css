@@ -1,0 +1,50 @@
+.input-area {
+    display: block;
+    width: 480px;
+    justify-content: center;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.input-area .input {
+    margin: 0px 5px;
+    border: none;
+    font-size: 1.1em;
+
+    width: 90%;
+    font-family: inherit;
+    pointer-events: all;
+}
+
+.input-area input {
+    padding: 10px 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-area textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-area button {
+    font-family: inherit;
+    margin-bottom: 0;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    float: right;
+    margin-bottom: -18px;
+    margin-right: 10px;
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: none;
+    font-size: 0.8em;
+    box-shadow: inherit;
+    cursor: pointer;
+    user-select: all;
+    text-align: center;
+
+}

@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+note-section {
+  display: block;
+}
+
+.create-note {
+  display: flex;
+  justify-content: center;
+}
