@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Header from "./Header";
+import Header from "./partials/Header";
 import Note from "./Note";
-import Footer from "./Footer";
+import Footer from "./partials/Footer";
 import InputArea from "./InputArea";
 import "./App.css";
 
