@@ -1,4 +1,5 @@
 .note {
+    position: relative;
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #a4a4a4;
@@ -6,7 +7,23 @@
     width: 240px;
     margin: 16px;
     float: left;
+    border: 2px solid var(--primaryColor);
+    background-color: var(--paper-color);
+    background-image: var(--paper-texture);
+    font-family: 'Caveat', serif;
+    font-size: 22px;
+
 }
+
+.push-pin {
+    float: left;
+    margin-top: -25px;
+    margin-left: -20px;
+    transform: rotate(-30deg);
+    color: var(--primaryColor);
+    padding: 0px;
+}
+
 
 .note h1 {
     font-size: 1.1em;
@@ -24,6 +41,7 @@
     border-radius: 10px;
     background-color: #fff;
     color: var(--primaryColor);
+
     width: 50px;
     height: 25px;
     border: none;
@@ -32,4 +50,6 @@
     font-weight: bold;
     cursor: pointer;
     text-align: right;
+    background-image: inherit;
+    background-color: inherit;
 }

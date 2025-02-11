@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import Header from "./partials/Header";
-import Note from "./Note";
-import Footer from "./partials/Footer";
-import InputArea from "./InputArea";
+import Header from "./components/partials/Header";
+import Note from "./components/Note";
+import Footer from "./components/partials/Footer";
+import InputArea from "./components/InputArea";
+
+
 import "./App.css";
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
   return (
     <div class="content">
       <Header />
+      <div class = "inner-content">
       <div class="create-note">
         <InputArea onAdd={addNote} />
       </div>
@@ -42,8 +45,10 @@ function App() {
           );
         })}
       </div>
+      </div> 
 
       <Footer />
+
     </div>
   );
 }

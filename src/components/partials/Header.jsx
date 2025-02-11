@@ -1,13 +1,14 @@
 import React from "react";
-import HighlightIcon from "@mui/icons-material/Highlight";
+import EditNoteIcon from '@mui/icons-material/EditNote';
 import "./Header.css";
+import { EditNote } from "@mui/icons-material";
 
 function Header() {
   return (
     <header>
       <h1>
         {" "}
-        <HighlightIcon /> Keeper
+        <EditNoteIcon fontSize="large" /> Keeper
       </h1>
     </header>
   );
