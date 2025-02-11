@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import { Add } from "@mui/icons-material";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
 import "./InputArea.css";
