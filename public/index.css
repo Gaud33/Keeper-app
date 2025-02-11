@@ -1,11 +1,11 @@
 :root {
   --primaryColor: #DDA15E;
   --secondaryColor: #eee;
-  --primary-texture: url('./images/cartographer.png');
-  --background-texture: url('./images/brushed-alum-dark.png');
+  --primary-texture: url('/images/cartographer.png');
+  --background-texture: url('/images/brushed-alum-dark.png');
   --background-color: #F1E0C6;
   --paper-color: #fffdf2;
-  --paper-texture: url('https://www.transparenttextures.com/patterns/old-wall.png');
+  --paper-texture: url('/images/old-wall.png');
 }
 
 * {
