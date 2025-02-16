@@ -10,6 +10,11 @@
 
 }
 
+.owl{
+  width: 20%;  
+  display: inline;
+}
+
 .inner-content{
 
   height: 100%;
@@ -28,4 +33,5 @@ note-section {
 .create-note {
   display: flex;
   justify-content: center;
+  width:100%;
 }

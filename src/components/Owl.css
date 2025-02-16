@@ -1,0 +1,16 @@
+.owl-image{
+    height: 130px;
+    width: 180px;
+    margin-top: -38px; 
+    margin-bottom: -21px; 
+}
+
+.owl-container{
+    margin-top: 0;
+    padding: 0;
+    margin: auto;
+    width: 650px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: right;
+}

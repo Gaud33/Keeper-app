@@ -34,7 +34,10 @@ function InputArea(props) {
   }
 
   return (
+  
+  
     <form class="note input-area">
+     
       <input
         name="title"
         value={note.title}
@@ -60,6 +63,7 @@ function InputArea(props) {
         </Fab>
       </Zoom>
     </form>
+    
   );
 }
 

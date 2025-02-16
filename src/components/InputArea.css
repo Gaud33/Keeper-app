@@ -8,8 +8,11 @@
     font-size: 15px;
     background-color: var(--paper-color);
     background-image: var(--paper-texture);
-    border: 2px solid var(--primaryColor);
+    border: 2px solid var(--borderColor);
+    margin-top: -20px;
 }
+
+
 
 .input-area .input {
     margin: 0px 5px;

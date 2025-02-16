@@ -2,26 +2,41 @@
     position: relative;
     background: #fff;
     border-radius: 7px;
-    box-shadow: 0 2px 5px #a4a4a4;
+    box-shadow: inset 4px 4px 8px rgba(92, 64, 51, 0.3),
+    inset -4px -4px 8px rgba(92, 64, 51, 0.3),
+    inset 4px -4px 8px rgba(92, 64, 51, 0.3),
+    inset -4px 4px 8px rgba(92, 64, 51, 0.3);
+
+
     padding: 10px;
     width: 240px;
     margin: 16px;
     float: left;
-    border: 2px solid var(--primaryColor);
+    border: 2px solid var(--borderColor);
     background-color: var(--paper-color);
     background-image: var(--paper-texture);
     font-family: 'Caveat', serif;
     font-size: 22px;
+   
 
 }
 
 .push-pin {
+    width: 8px;
+    height: 8px;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+   
     float: left;
-    margin-top: -25px;
-    margin-left: -20px;
-    transform: rotate(-30deg);
+    margin-top: -5px;
+    margin-left: -5px;
+    transform: rotate(10deg);
     color: var(--primaryColor);
+    background-image: var(--nail-texture);
     padding: 0px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #787878;
 }
 
 
@@ -40,7 +55,7 @@
 .note .delete-btn {
     border-radius: 10px;
     background-color: #fff;
-    color: var(--primaryColor);
+    color: var(--borderColor);
 
     width: 50px;
     height: 25px;

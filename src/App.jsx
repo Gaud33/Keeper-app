@@ -3,6 +3,7 @@ import Header from "./components/partials/Header";
 import Note from "./components/Note";
 import Footer from "./components/partials/Footer";
 import InputArea from "./components/InputArea";
+import Owl from "./components/Owl";
 
 
 import "./App.css";
@@ -27,9 +28,12 @@ function App() {
   return (
     <div class="content">
       <Header />
+
       <div class = "inner-content">
+      <Owl />
       <div class="create-note">
-        <InputArea onAdd={addNote} />
+            <InputArea onAdd={addNote} />
+        
       </div>
 
       <div class="note-section">

@@ -1,12 +1,14 @@
 :root {
   --primaryColor: #DDA15E;
+  --borderColor: #b28047;
   --secondaryColor: #eee;
-  --primary-texture: url('/images/cartographer.png');
-  --background-texture: url('/images/brushed-alum-dark.png');
-  --background-color: #F1E0C6;
+  --primary-texture: url('/images/dark-wood.png');
+  --background-texture: url('/images/tileable-wood-colored.png');
+  --background-color: #D7B98E ;
   --paper-color: #fffdf2;
-  --paper-texture: url('/images/old-wall.png');
-}
+  --paper-texture: url('/images/notebook-dark.png');
+  --nail-texture: url('/images/iron-nail.png');
+  }
 
 * {
   padding: 0;
